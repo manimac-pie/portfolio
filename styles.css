@@ -253,11 +253,11 @@ ul { padding: 0; margin: 0; list-style: none; }
 .chips li::before { content: "✓ "; font-weight: 700; }
 
 /* Hero illustration (pure CSS) */
-.hero-art { position: relative; min-height: 430px; }
+.hero-art { position: relative; min-height: 390px; }
 
 .mock-browser {
   position: absolute;
-  inset: 20px 56px 44px 0;
+  inset: 20px 8px 30px 0;
   background: var(--surface);
   border: var(--bw) solid var(--line);
   border-radius: var(--radius);
@@ -296,42 +296,6 @@ ul { padding: 0; margin: 0; list-style: none; }
 .mock-pill { width: 92px; height: 28px; border-radius: 999px; background: var(--lime); border: 2px solid var(--on-c); }
 .mock-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
 .mock-cards div { height: 74px; border-radius: 8px; border: 2px solid var(--line); background: var(--bg-alt); }
-
-.mock-phone {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 196px;
-  padding: 22px 14px 16px;
-  background: var(--surface);
-  border: var(--bw) solid var(--line);
-  border-radius: 28px;
-  box-shadow: 8px 8px 0 var(--shadow-c);
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  transform: rotate(3deg);
-}
-.mock-app-title { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; margin: 0; }
-.mock-app-date { color: var(--muted); margin: 0 0 10px; }
-.mock-slot {
-  padding: 7px 10px;
-  margin-bottom: 6px;
-  border: 2px solid var(--line);
-  border-radius: 8px;
-  font-weight: 700;
-}
-.mock-slot.is-selected { background: var(--lime); color: var(--on-c); border-color: var(--on-c); }
-.mock-slot.is-taken { color: var(--muted); text-decoration: line-through; border-style: dashed; }
-.mock-confirm {
-  margin-top: 10px;
-  padding: 8px;
-  border: 2px solid var(--on-c);
-  border-radius: 999px;
-  background: var(--pink);
-  color: var(--on-c);
-  text-align: center;
-  font-weight: 700;
-}
 
 /* Stickers */
 .sticker {
@@ -661,9 +625,8 @@ ul { padding: 0; margin: 0; list-style: none; }
   .nav-links li a:not(.btn) { display: block; padding: 12px 0; font-size: 1.05rem; }
   .nav-links .btn { margin-top: 10px; width: 100%; }
 
-  .hero-art { min-height: 360px; }
-  .mock-browser { inset: 14px 40px 56px 0; }
-  .mock-phone { width: 164px; }
+  .hero-art { min-height: 320px; }
+  .mock-browser { inset: 14px 6px 28px 0; }
   .mock-cards div { height: 52px; }
   .sticker-star { width: 96px; height: 96px; right: 4px; top: -24px; }
   .sticker-star span { font-size: 0.78rem; }
@@ -678,6 +641,10 @@ ul { padding: 0; margin: 0; list-style: none; }
   .sticker-about { right: -12px; }
   .contact-card { padding: 34px 22px; border-radius: 20px; box-shadow: 8px 8px 0 var(--shadow-c); }
   .contact-actions { flex-direction: column; align-items: stretch; }
+}
+
+@media (max-width: 380px) {
+  .logo { font-size: 1.05rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
