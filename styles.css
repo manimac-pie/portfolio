@@ -299,7 +299,10 @@ ul { padding: 0; margin: 0; list-style: none; }
 .section-alt .tags li { background: var(--bg); }
 
 /* Services */
-.card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; }
+/* Five cards: three on the first row, two wider ones on the second */
+.card-grid > .card { grid-column: span 2; }
+.card-grid > .card:nth-child(n + 4) { grid-column: span 3; }
 
 .card {
   background: var(--surface);
@@ -473,6 +476,8 @@ ul { padding: 0; margin: 0; list-style: none; }
 /* ---------- Responsive ---------- */
 @media (max-width: 1000px) {
   .card-grid, .steps { grid-template-columns: repeat(2, 1fr); }
+  .card-grid > .card, .card-grid > .card:nth-child(n + 4) { grid-column: auto; }
+  .card-grid > .card:last-child { grid-column: 1 / -1; }
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .hero-art { max-width: 560px; width: 100%; margin: 0 auto; }
   .about-grid { grid-template-columns: 240px 1fr; gap: 40px; }
