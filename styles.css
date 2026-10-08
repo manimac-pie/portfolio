@@ -372,8 +372,6 @@ ul { padding: 0; margin: 0; list-style: none; }
 
 .project-links { margin-top: auto; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
 .project-links .project-link { margin-top: 0; }
-.project-link-muted { color: var(--muted); font-weight: 600; text-decoration: underline; text-underline-offset: 4px; }
-.project-link-muted:hover { color: var(--text); }
 .project-soon {
   font-size: 0.85rem;
   font-weight: 700;
