@@ -1,3 +1,6 @@
 .DS_Store
 # original photo still has GPS location data; the site uses images/maira.jpg instead
 images/portfolioPic.jpg
+
+# private outreach files (lead lists, email drafts) - never publish
+outreach/
